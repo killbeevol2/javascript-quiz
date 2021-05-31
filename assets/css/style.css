@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("../img/icecream.jpg");
+  background-image: url("/assets/img/icecream.jpg");
   background-repeat: repeat;
 }
 
