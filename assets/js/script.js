@@ -12,6 +12,35 @@ if (!storedScore) {
   var storedScore = [];
 }
 
+// Starts the game
+function startGame() {
+  time = 91;
+  var timer = setInterval(function () {
+    timerBox.innerHTML = "";
+    time--;
+    timerBox.textContent = time + " seconds left.";
+
+    if (time < 1) {
+      clearInterval(timer);
+      timerBox.innerHTML = "<button id='startagain'>Play again</button>";
+      question.innerHTML = "Game Over";
+      enterScore();
+      document
+        .querySelector("#startagain")
+        .addEventListener("click", function (event) {
+          if ((event.target.id = "startagain")) {
+            score = 0;
+            nextQuestionId = 0;
+          }
+
+          startGame();
+        });
+    }
+  }, 1000);
+
+  nextQuestion(nextQuestionId);
+}
+
 // Show next question and clickable options
 function nextQuestion(nextQuestionId) {
   question.innerHTML = questions[nextQuestionId].question;
@@ -34,28 +63,9 @@ function nextQuestion(nextQuestionId) {
   window.nextQuestionId++;
 }
 
-// Timer. Starts at 90 secs, remove 5 sec each time a wrong answer is clicked. Shows game over when the timer reaches 0.
+// Timer. Starts at 90 secs, remove 10 sec each time a wrong answer is clicked. Shows game over when the timer reaches 0.
 startButton.addEventListener("click", function (event) {
-  if ((event.target.id = "startagain")) {
-    score = 0;
-    nextQuestionId = 0;
-  }
-
-  time = 91;
-  var timer = setInterval(function () {
-    timerBox.innerHTML = "";
-    time--;
-    timerBox.textContent = time + " seconds left.";
-
-    if (time < 1) {
-      clearInterval(timer);
-      timerBox.innerHTML = "<button id='startagain'>Play again</button>";
-      question.innerHTML = "Game Over";
-      enterScore();
-    }
-  }, 1000);
-
-  nextQuestion(nextQuestionId);
+  startGame();
 });
 
 // Sorts the highscore and shows it in li tags
