@@ -6,7 +6,7 @@ var questions = {
     b: "<body>",
     c: "<header>",
     d: "HTML",
-    win: "b",
+    win: "<body>",
   },
 
   1: {
@@ -15,7 +15,7 @@ var questions = {
     b: "ID's are more cool to use",
     c: "ID is used once, while Class can be used multiple of times",
     d: "Class is better to use",
-    win: "c",
+    win: "ID is used once, while Class can be used multiple of times",
   },
 
   2: {
@@ -24,7 +24,7 @@ var questions = {
     b: "<img src=>",
     c: "</ >",
     d: ";",
-    win: "c",
+    win: "</ >",
   },
 
   3: {
@@ -33,7 +33,7 @@ var questions = {
     b: "<ul>",
     c: "<s>",
     d: "<u>",
-    win: "d",
+    win: "<u>",
   },
 
   4: {
@@ -42,7 +42,7 @@ var questions = {
     b: "<u>",
     c: "<li>",
     d: "<s>",
-    win: "c",
+    win: "<li>",
   },
 
   5: {
@@ -52,7 +52,7 @@ var questions = {
     b: "Output",
     c: "Range",
     d: "Scope",
-    win: "d",
+    win: "Scope",
   },
 
   6: {
@@ -62,7 +62,7 @@ var questions = {
     b: "CSS",
     c: "Node",
     d: "JavaScript",
-    win: "d",
+    win: "JavaScript",
   },
 
   7: {
@@ -72,7 +72,7 @@ var questions = {
     b: "Array",
     c: "String",
     d: "Function",
-    win: "d",
+    win: "Function",
   },
 
   8: {
@@ -82,7 +82,7 @@ var questions = {
     b: "Syntax",
     c: "Summary",
     d: "Aligment",
-    win: "a",
+    win: "Pseudocode",
   },
 
   9: {
@@ -91,6 +91,6 @@ var questions = {
     b: "Coffee while reading",
     c: "Programming or scripting language",
     d: "A link providing errors via dubugging",
-    win: "c",
+    win: "Programming or scripting language",
   },
 };

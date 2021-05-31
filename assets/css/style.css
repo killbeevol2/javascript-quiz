@@ -2,13 +2,17 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("../img/icecream.jpg");
+  background-repeat: repeat;
+}
+
 header,
 section,
 aside {
-  background-color: rgb(16, 190, 34);
-  box-shadow: rgba(11, 146, 40, 0.25) 0px 54px 55px,
-    rgba(23, 190, 51, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(27, 224, 109, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #51291e;
+  box-shadow: #301014 0px 10px 10px;
+  color: #abd1b5;
 }
 
 /* Header container  */
@@ -24,6 +28,21 @@ header {
   font-weight: bold;
 }
 
+/* Buttons */
+button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #79b791;
+  color: #edf4ed;
+  transition: all 0.5s ease-in-out;
+}
+
+form > button {
+  margin-top: 10px;
+}
+
 /* Question containers */
 section {
   text-align: center;
@@ -36,19 +55,22 @@ section {
 }
 
 a {
-  background-color: #0f611a;
+  background-color: #79b791;
   border-radius: 6px;
-  border: 1px solid #204227;
   display: block;
   font-size: 18px;
   font-weight: bold;
   padding: 6px;
   text-decoration: none;
   margin: 10px 80px 0px 80px;
+  color: #edf4ed;
+  transition: all 0.5s ease-in-out;
 }
+button:hover,
 a:hover {
-  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
-  background-color: #e41b1b;
+  background-color: #edf4ed;
+  color: #79b791;
+  cursor: pointer;
 }
 
 /* High scores  */
@@ -59,6 +81,9 @@ aside {
   padding: 10px;
   width: 35vw;
   float: right;
+  font-weight: bold;
+  font-size: medium;
+  margin-top: 10px;
 }
 
 /* Scores */
@@ -72,7 +97,7 @@ li {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 8px;
-  background-color: grey;
-  color: #e41b1b;
+  background-color: #79b791;
+  color: #edf4ed;
   font-size: 18px;
 }
