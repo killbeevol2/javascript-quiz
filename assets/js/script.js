@@ -45,21 +45,21 @@ function startGame() {
 function nextQuestion(nextQuestionId) {
   question.innerHTML = questions[nextQuestionId].question;
   main.innerHTML = "";
-  var choice1 = document.createElement("a");
-  choice1.textContent = questions[nextQuestionId].a;
-  main.appendChild(choice1);
+  var answer1 = document.createElement("a");
+  answer1.textContent = questions[nextQuestionId].a;
+  main.appendChild(answer1);
 
-  var choice2 = document.createElement("a");
-  choice2.textContent = questions[nextQuestionId].b;
-  main.appendChild(choice2);
+  var answer2 = document.createElement("a");
+  answer2.textContent = questions[nextQuestionId].b;
+  main.appendChild(answer2);
 
-  var choice3 = document.createElement("a");
-  choice3.textContent = questions[nextQuestionId].c;
-  main.appendChild(choice3);
+  var answer3 = document.createElement("a");
+  answer3.textContent = questions[nextQuestionId].c;
+  main.appendChild(answer3);
 
-  var choice4 = document.createElement("a");
-  choice4.textContent = questions[nextQuestionId].d;
-  main.appendChild(choice4);
+  var answer4 = document.createElement("a");
+  answer4.textContent = questions[nextQuestionId].d;
+  main.appendChild(answer4);
   window.nextQuestionId++;
 }
 
