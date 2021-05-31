@@ -3,7 +3,8 @@
 }
 
 body {
-  background-image: url("javascript-quiz/assets/img/icecream.jpg");
+  background-image: url("javascript-quiz/assets/img/icecream.jpg") !important;
+  position: relative;
   background-repeat: repeat;
 }
 
